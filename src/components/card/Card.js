@@ -8,14 +8,14 @@ const Cards = ({ movie }) => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false);
-        }, 1500);
+        }, 3000);
     }, []);
 
     return (
         <>
             {isLoading ? (
                 <div className='cards'>
-                    <SkeletonTheme color='#202020' highlightColor='#444'>
+                    <SkeletonTheme Color='#FFD700' highlightColor='#444'>
                         <Skeleton height={300} duration={2} />
                     </SkeletonTheme>
                 </div>
